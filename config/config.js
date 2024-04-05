@@ -33,7 +33,7 @@ dotenv.config();
 
 const database = new Sequelize(
   process.env.DATABASE,
-  "root",
+  process.env.USERNAME,
   process.env.PASSWORD,
   {
     host: "localhost",
@@ -48,6 +48,7 @@ const database = new Sequelize(
     // dialectOptions: {
     //   socketPath: "/opt/lampp/var/mysql/mysql.sock",
     // },
+    logging: true,
   }
 );
 
