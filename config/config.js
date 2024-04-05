@@ -21,7 +21,7 @@ const database = new Sequelize({
   username: "root",
   password: process.env.PASSWORD,
   dialect: "mysql",
-  PORT: 3000,
+  port: 3306,
 });
 
 module.exports = database;
