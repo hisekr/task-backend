@@ -45,6 +45,9 @@ const database = new Sequelize(
       acquire: 30000,
       idle: 10000,
     },
+    dialectOptions: {
+      socketPath: "/opt/lampp/var/mysql/mysql.sock",
+    },
   }
 );
 
