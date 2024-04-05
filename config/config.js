@@ -33,7 +33,7 @@ dotenv.config();
 
 const database = new Sequelize(
   process.env.DATABASE,
-  process.env.USERNAME,
+  "root",
   process.env.PASSWORD,
   {
     host: "localhost",
