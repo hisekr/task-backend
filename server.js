@@ -3,10 +3,13 @@ const authRoutes = require("./routes/authRoutes");
 const bodyParser = require("body-parser");
 const routes = require("./routes/routes");
 const cors = require("cors");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(bodyParser.json());
