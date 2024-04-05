@@ -6,7 +6,7 @@
 //   password: "123456",
 //   dialect: "mysql",
 // });
-
+//
 // module.exports = database;
 
 const Sequelize = require("sequelize");
